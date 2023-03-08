@@ -1,3 +1,48 @@
-body{
+$offset: 50%;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.product-preview-container{
+    position: absolute;
+    top: $offset;
+    left: $offset;
+    transform: translate(-$offset, -$offset);
 
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    padding: 1rem;
+    background: red;
+
+    .heroImg{
+        width: 100%;
+        border-radius: 1rem;
+    }
+    .content-container{
+        padding: 1rem;
+    }
+    header{
+
+    }
+    h1{
+
+    }
+    p{
+
+    }
+    .new-price{
+
+    }
+    .old-price{
+
+    }
+    button{
+
+    }
+    .cart-icon{
+
+    }
 }
