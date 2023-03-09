@@ -1,10 +1,10 @@
 $offset: 50%;
 
 // Colors:
-$contentContainerColor: hsl(0, 0%, 100%);
+$contentContainerBackgroundColor: hsl(0, 0%, 100%);
 $bodyBackground: hsl(26, 40%, 92%);
-$headerColor: hsl(212, 19%, 14%);
-$h1Color: hsl(240, 3%, 48%);
+$headerColor: hsl(240, 3%, 48%);
+$h1Color: hsl(212, 19%, 14%);
 $pColor: hsl(240, 3%, 59%);
 $newPriceColor: hsl(158, 39%, 36%);
 $oldPriceColor: hsl(240, 4%, 53%);
@@ -15,6 +15,9 @@ $addToCartBtnBackgroundColor: hsl(158, 36%, 37%);
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    background: $bodyBackground;
+}
 .product-preview-container{
     position: absolute;
     top: $offset;
@@ -24,34 +27,37 @@ $addToCartBtnBackgroundColor: hsl(158, 36%, 37%);
     display: flex;
     flex-direction: column;
     
-    width: 25%;
-    padding: 1rem;
-    background: red;
+    border-radius: 1rem;
+    width: 21.438rem;
+    background: $contentContainerBackgroundColor;
 
-    .heroImg{
+    .hero-img{
         width: 100%;
-        border-radius: 1rem;
+        border-radius: 1rem 1rem 0 0;
     }
     .content-container{
-        padding: 1rem;
+        padding: 1.25rem;
     }
     header{
-
+        color: $headerColor;
     }
     h1{
-
+        color: $h1Color;
     }
     p{
-
+        color: $pColor;
     }
     .new-price{
-
+        color: $newPriceColor;
     }
     .old-price{
-
+        color: $oldPriceColor;
+        text-decoration: line-through;
     }
     button{
-
+        color: white;
+        background: $addToCartBtnBackgroundColor;
+        border: 0;
     }
     .cart-icon{
 
