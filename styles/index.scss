@@ -1,19 +1,27 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Fraunces");
 $offset: 50%;
 
 // Colors:
-$contentContainerBackgroundColor: hsl(0, 0%, 100%);
+$white: hsl(0, 0%, 100%);
 $bodyBackground: hsl(26, 40%, 92%);
 $headerColor: hsl(240, 3%, 48%);
 $h1Color: hsl(212, 19%, 14%);
 $pColor: hsl(240, 3%, 59%);
 $newPriceColor: hsl(158, 39%, 36%);
 $oldPriceColor: hsl(240, 4%, 53%);
-$addToCartBtnBackgroundColor: hsl(158, 36%, 37%);
+$cartBtnBackground: hsl(158, 36%, 37%);
+
+// Font stuff
+$fontSizeP: 0.875rem;
+$fontWeightH1: 700;
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    // font-family: "Fraunces";
+    font-family: "Montserrat";
 }
 body{
     background: $bodyBackground;
@@ -29,37 +37,64 @@ body{
     
     border-radius: 1rem;
     width: 21.438rem;
-    background: $contentContainerBackgroundColor;
+    background: $white;
 
     .hero-img{
         width: 100%;
         border-radius: 1rem 1rem 0 0;
     }
     .content-container{
-        padding: 1.25rem;
-    }
-    header{
-        color: $headerColor;
-    }
-    h1{
-        color: $h1Color;
-    }
-    p{
-        color: $pColor;
-    }
-    .new-price{
-        color: $newPriceColor;
-    }
-    .old-price{
-        color: $oldPriceColor;
-        text-decoration: line-through;
-    }
-    button{
-        color: white;
-        background: $addToCartBtnBackgroundColor;
-        border: 0;
-    }
-    .cart-icon{
+        padding: 1.375rem;
 
+        header{
+            color: $headerColor;
+            font-size: 0.75rem;
+            margin: 0 0 0.875rem 0;
+        }
+        h1{
+            color: $h1Color;
+            font-family: "Fraunces";
+            font-weight: $fontWeightH1;
+            margin: 0 0 1rem 0;
+        }
+        p{
+            color: $pColor;
+            font-size: $fontSizeP;
+            line-height: 1.375rem;
+            margin: 0 0 1rem 0;
+            padding: 0 0.25rem 0 0;
+        }
+        .price-container{
+            display: flex;
+            align-items: center;
+            margin: 0 0 1rem 0;
+            .new-price{
+                color: $newPriceColor;
+                font-family: "Fraunces";
+                font-size: 1.875rem;
+                font-weight: 600;
+                margin: 0 1.25rem 0 0;
+            }
+            .old-price{
+                color: $oldPriceColor;
+                text-decoration: line-through;
+                font-size: 0.875rem;
+            }
+        }
+        button{
+            color: $white;
+            background: $cartBtnBackground;
+            width: 100%;
+            border: 0;
+            border-radius: 0.635rem;
+            padding: 1rem;
+    
+            display: flex;
+            justify-content: center;
+    
+            .cart-icon{
+                margin: 0 0.625rem;
+            }
+        }
     }
 }

@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Fraunces");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 body {
@@ -24,26 +27,53 @@ body {
   border-radius: 1rem 1rem 0 0;
 }
 .product-preview-container .content-container {
-  padding: 1.25rem;
+  padding: 1.375rem;
 }
-.product-preview-container header {
+.product-preview-container .content-container header {
   color: hsl(240, 3%, 48%);
+  font-size: 0.75rem;
+  margin: 0 0 0.875rem 0;
 }
-.product-preview-container h1 {
+.product-preview-container .content-container h1 {
   color: hsl(212, 19%, 14%);
+  font-family: "Fraunces";
+  font-weight: 700;
+  margin: 0 0 1rem 0;
 }
-.product-preview-container p {
+.product-preview-container .content-container p {
   color: hsl(240, 3%, 59%);
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  margin: 0 0 1rem 0;
+  padding: 0 0.25rem 0 0;
 }
-.product-preview-container .new-price {
+.product-preview-container .content-container .price-container {
+  display: flex;
+  align-items: center;
+  margin: 0 0 1rem 0;
+}
+.product-preview-container .content-container .price-container .new-price {
   color: hsl(158, 39%, 36%);
+  font-family: "Fraunces";
+  font-size: 1.875rem;
+  font-weight: 600;
+  margin: 0 1.25rem 0 0;
 }
-.product-preview-container .old-price {
+.product-preview-container .content-container .price-container .old-price {
   color: hsl(240, 4%, 53%);
   text-decoration: line-through;
+  font-size: 0.875rem;
 }
-.product-preview-container button {
-  color: white;
+.product-preview-container .content-container button {
+  color: hsl(0, 0%, 100%);
   background: hsl(158, 36%, 37%);
+  width: 100%;
   border: 0;
+  border-radius: 0.635rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.product-preview-container .content-container button .cart-icon {
+  margin: 0 0.625rem;
 }/*# sourceMappingURL=index.css.map */
